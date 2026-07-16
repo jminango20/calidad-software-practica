@@ -1,12 +1,16 @@
 """
 Sistema de Gestion de Pedidos - Version de Practica
-Calidad de Software - Actividad SonarCloud
+Calidad de Software - Actividad SonarLint + pytest
 
-INSTRUCCIONES:
-1. Haz fork de este repositorio
-2. Corrige al menos 2 problemas que detecte SonarCloud
-3. Haz commit + push
-4. Abre un Pull Request y espera el comentario automatico de SonarCloud
+INSTRUCCIONES SONARLINT:
+1. Abre este archivo con SonarQube for IDE instalado en VS Code
+2. Veras lineas subrayadas - son los problemas detectados
+3. Identifica al menos 5 problemas y corrigelos
+4. Completa la tabla de registro que te entrego el docente
+
+INSTRUCCIONES PYTEST:
+1. pip install pytest
+2. pytest test_practica.py -v
 """
 
 import os
@@ -81,10 +85,10 @@ def calcular_total(precios):
 
 
 def main():
-    print(dividir(10, 0))
+    print(dividir(10, 2))
     print(procesar_pedido("A", 150, 1, "VIP", "2026-06-20", "Norte", "Juan"))
-    print(agregar_item("manzana"))
-    print(agregar_item("pera"))
+    print(agregar_item("manzana", []))
+    print(agregar_item("pera", []))
 
 
 if __name__ == "__main__":
