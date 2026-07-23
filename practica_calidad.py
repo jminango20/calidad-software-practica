@@ -77,3 +77,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+ git add practica_calidad.py
+git commit -m "Prueba para activar workflow de SonarCloud"
+git push origin main
