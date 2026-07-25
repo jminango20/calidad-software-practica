@@ -3,6 +3,8 @@ Sistema de Gestion de Pedidos
 Calidad de Software - Version corregida para pytest
 """
 
+# Cambio de prueba para activar GitHub Actions
+
 import os
 
 
@@ -76,4 +78,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # Prueba de GitHub Actions
     main()
