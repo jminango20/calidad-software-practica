@@ -48,6 +48,13 @@ def test_agregar_item_contiene_el_item():
 # Recuerda: def test_nombre_descriptivo(): + assert
 
 # Test 1:
+def test_dividir_con_decimales():
+    """La division con numeros decimales debe ser correcta."""
+    assert dividir(7.5, 2.5) == 3.0
 
 
 # Test 2:
+def test_agregar_item_lista_existente():
+    """El nuevo item debe agregarse al final de una lista existente."""
+    resultado = agregar_item("naranja", ["manzana", "pera"])
+    assert resultado == ["manzana", "pera", "naranja"]
